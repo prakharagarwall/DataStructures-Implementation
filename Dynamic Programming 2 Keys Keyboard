@@ -1,0 +1,30 @@
+// Initially on a notepad only one character 'A' is present. You can perform two operations on this notepad for each step:
+//Copy All: You can copy all the characters present on the notepad (partial copy is not allowed).
+//Paste: You can paste the characters which are copied last time.
+//Given a number n. You have to get exactly n 'A' on the notepad by performing the minimum number of steps permitted. 
+//Output the minimum number of steps to get n 'A'.
+
+//Example:
+//Input: 3
+//Output: 3
+//Explanation:
+//Intitally, we have one character 'A'.
+//In step 1, we use Copy All operation.
+//In step 2, we use Paste operation to get 'AA'.
+//In step 3, we use Paste operation to get 'AAA'.
+
+//Here for each value of d from 2, i am check whether is it possible to paste and minimise the number of operations using the d number of A,
+if it is not then we increase the value of d.
+class Solution {
+    public int minSteps(int n) {
+        int ans = 0, d = 2;
+        while (n > 1) {
+            while (n % d == 0) {
+                ans += d;
+                n /= d;
+            }
+            d++;
+        }
+        return ans;
+    }
+}
