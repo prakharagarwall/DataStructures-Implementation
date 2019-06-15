@@ -4,3 +4,4 @@ Most of the implementations here are with only the main logic of the solutions. 
 I am just a guy trying to improve my coding and data structures implementation skills during my free time in summer, I know most of the people around the world has better solutions then each and every solution I have done here.
 If you come around a better solution or memory efficient then any of them, then feel free to contact me at PRAKHARAGARWALL95@GMAIL.COM.
 Happy Coding. I am always there if you need any help, just send me an email.
+Main.java is the file which implements some operations on data which is stored in a hashmap.
