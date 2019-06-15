@@ -4,19 +4,16 @@
 //I have made only one class, and there are methods for different question asked during the assignment.
 //Here are the coding exercises. Read the provided JSON into your JAVA program and
 //
-//        1.  Be able to read the JSON data and store it in a java collection or a data structure
+//        1.  Display the data stored in Java Collections.
 //        2.  Query the above collection :Given a lot number, retrieve all the information regarding the lot.
 //        3.  Sort the lots based on profit
 //        4.  Determine the seller who has the highest lots
 //        5.  Determine tax based on country code
-//
-//        Sample JSON DATA having data for multiple lots (vehicles ) that we sold in a day with explanation:
-//        •  Each vehicle we sell is called a LOT
-//        •  The price that we pay to our seller for buying the lot from them will be termed as Sale price
-//        •  Purchase price would be the price at which a buyer purchases the lot from us
-//        •  Country code determines the country where the transaction is occurring
-//        •  Tax rate differs based on country
-//        •  Party – defines the buyer and the seller
+        //explaining data stored in map, so lets take the map 
+        //key is the lot number eg. 12 is the lot number
+        //Now in the value we have an arraylist, whose first value is the country code, then, the sellertype,
+        // then the seller id, then the member type, then member id, then, purchase price and then sale price.
+
 
 import java.util.*;
 public class Main {
